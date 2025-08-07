@@ -55,7 +55,7 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
       >
-        <img
+        <Image
           src="/images/Founder.png"
           alt="Owner Photo"
           className="w-60 h-60 rounded-full object-cover border-2 border-yellow-700  shadow mb-6"
@@ -68,7 +68,7 @@ export default function Home() {
           <h3 className="font-semibold text-xl mb-8 mt-4">Founder Son's</h3>
           <ul className="text-2xl text-yellow-700 dark:text-yellow-400 font-semibold space-y-1">
             <div className="sons flex items-center justify-center gap-12 mb-3">
-          <img
+          <Image
           src="/images/Saheed.png"
           alt="Owner Photo"
           className="w-28 h-28 rounded-full object-cover object-top border-2 border-yellow-700 shadow"
@@ -79,7 +79,7 @@ export default function Home() {
                     </div>
             </div>
             <div className="sons flex items-center justify-center gap-12 mb-3">
-          <img
+          <Image
           src="/images/Baheed.png"
           alt="Owner Photo"
           className="w-28 h-28 rounded-full object-cover object-top border-2 border-yellow-700 shadow"
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
             </div>
             <div className="sons flex items-center justify-center gap-12 mb-3">
-          <img
+          <Image
           src="/images/Jaheed.png"
           alt="Owner Photo"
           className="w-28 h-28 rounded-full object-cover object-center border-2 border-yellow-700 shadow"
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
             </div>
             <div className="sons flex items-center justify-center gap-12 mb-3 mr-10">
-          <img
+          <Image
           src="/images/Aziz.png"
           alt="Owner Photo"
           className="w-28 h-28 rounded-full object-cover object-top border-2 border-yellow-700 shadow"
@@ -228,7 +228,7 @@ export default function Home() {
             <div
               className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col"
             >
-              <img className="h-50 object-cover object-top" src="/images/Talbehat.jpg" alt="" />
+              <Image className="h-50 object-cover object-top" src="/images/Talbehat.jpg" alt="" />
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-extrabold text-lg mb-4 uppercase">
                   Talbehat Police Residential, U.P
@@ -241,7 +241,7 @@ export default function Home() {
             <div
               className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col"
             >
-              <img className="h-50 object-cover" src="/images/Budpura2.jpg" alt="" />
+              <Image className="h-50 object-cover" src="/images/Budpura2.jpg" alt="" />
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-extrabold text-lg mb-4 uppercase">
                   Burhpura Higher Secondary School, U.P
@@ -254,7 +254,7 @@ export default function Home() {
             <div
               className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col"
             >
-              <img className="h-50 object-cover" src="/images/Samthar.jpg" alt="" />
+              <Image className="h-50 object-cover" src="/images/Samthar.jpg" alt="" />
               <div className="p-4 flex-1 flex flex-col">
                 <h3 className="font-extrabold text-lg mb-4 uppercase">
                   Lalitpur Bitumen Road Construction, U.P
