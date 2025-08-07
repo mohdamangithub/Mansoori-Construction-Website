@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen flex flex-col">
+      {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center text-center py-20 px-4 bg-gradient-to-br from-yellow-100 to-yellow-300 dark:from-yellow-700 dark:to-yellow-900">
         <motion.h1
           className="head text-4xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg"
@@ -42,6 +43,8 @@ export default function Home() {
         </motion.a>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-8 bg-gradient-to-t from-white dark:from-gray-900 to-transparent" />
       </section>
+
+      {/* Owner Section */}
       <motion.section
         id="owner"
         className=" px-4 max-w-3xl mx-auto w-full flex flex-col items-center text-center"
@@ -53,8 +56,8 @@ export default function Home() {
         <Image
           src="/images/Founder.png"
           alt="Owner Photo"
-          className="rounded-full object-cover border-2 border-yellow-700  shadow mb-6"
-          width={240}
+          className="rounded-full object-cover  border-2 border-yellow-700 shadow-amber-100 shadow-2xl dark:shadow-white mb-6"
+          width={240} //40
           height={240}
         />
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-yellow-700 dark:text-yellow-400">
@@ -62,18 +65,18 @@ export default function Home() {
         </h2>
         <p className="text-lg mb-14">Chief Contractor & Founder</p>
         <div className="bg-yellow-50 dark:bg-yellow-900/40 p-4 rounded-lg shadow w-full max-w-maxs mx-auto">
-          <h3 className="font-semibold text-xl mb-8 mt-4">{`Founder Son's`}</h3>
+          <h3 className="font-semibold text-xl mb-8 mt-4">{`Founder's Sons`}</h3>
           <ul className="text-2xl text-yellow-700 dark:text-yellow-400 font-semibold space-y-1">
             <div className="sons flex items-center justify-center gap-12 mb-3">
               <Image
                 src="/images/Saheed.png"
                 alt="Owner Photo"
                 className=" object-cover object-top border-2 border-yellow-700 shadow"
-                width={112}
+                width={112} // same as w-28
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mohd Saheed Mansoori</li>
+                <li>Mr. Saheed Mansoori</li>
                 <span className="text-[1rem] text-black font-normal dark:text-white">
                   ( PWD Contractor )
                 </span>
@@ -84,11 +87,11 @@ export default function Home() {
                 src="/images/Baheed.png"
                 alt="Owner Photo"
                 className="object-cover object-top border-2 border-yellow-700 shadow"
-                width={112}
+                width={112} // same as w-28
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mohd Baheed Mansoori</li>
+                <li>Mr. Baheed Mansoori</li>
                 <span className="text-[1rem] text-black font-normal dark:text-white">
                   ( Mansoori Building Materials )
                 </span>
@@ -99,26 +102,26 @@ export default function Home() {
                 src="/images/Jaheed.png"
                 alt="Owner Photo"
                 className="object-cover object-center border-2 border-yellow-700 shadow"
-                width={112}
+                width={112} // same as w-28
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mohd Jaheed Mansoori</li>
+                <li>Mr. Jaheed Mansoori</li>
                 <span className="text-[1rem] text-black font-normal dark:text-white">
                   ( Jaheed Stones )
                 </span>
               </div>
             </div>
-            <div className="sons flex items-center justify-center gap-12 mb-3 mr-10">
+            <div className="sons flex items-center justify-center gap-12 mb-3 mr-9">
               <Image
                 src="/images/Aziz.png"
                 alt="Owner Photo"
                 className="object-cover object-top border-2 border-yellow-700 shadow"
-                width={112}
+                width={112} // same as w-28
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mohd Aziz Mansoori</li>
+                <li>Mr. Aziz Mansoori</li>
                 <span className="text-[1rem] text-black font-normal dark:text-white">
                   ( lovely Garments )
                 </span>
@@ -128,6 +131,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* About Section */}
       <motion.section
         id="about"
         className="py-16 px-4 max-w-5xl mx-auto w-full text-center"
@@ -164,6 +168,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* Services Section */}
       <motion.section
         id="services"
         className="py-14 px-4 bg-gray-50 dark:bg-gray-800 w-full text-center"
@@ -222,6 +227,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* Projects Section */}
       <motion.section
         id="projects"
         className="py-16 px-4 max-w-5xl mx-auto w-full text-center"
@@ -236,7 +242,7 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
             <Image
-              width={400}
+              width={400} // same as h-50
               height={0}
               className="h-50 object-cover object-top"
               src="/images/Talbehat.jpg"
@@ -257,7 +263,7 @@ export default function Home() {
           </div>
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
             <Image
-              width={400}
+              width={400} // same as h-50
               height={0}
               className="h-50 object-cover"
               src="/images/Budpura2.jpg"
@@ -279,7 +285,7 @@ export default function Home() {
           </div>
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
             <Image
-              width={400}
+              width={400} // same as h-50
               height={0}
               className="h-50 object-cover"
               src="/images/Samthar.jpg"
@@ -302,6 +308,7 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* Contact Section */}
       <motion.section
         id="contact"
         className="py-16 px-4 bg-gray-50 dark:bg-gray-800 w-full text-center"

@@ -7,18 +7,18 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white dark:bg-gray-900 shadow-lg sticky top-0 z-50 border-b border-yellow-600">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-        
+        {/* Logo */}
         <Link href="#" className="flex items-center gap-4">
           <span className="inline-block bg-yellow-600 rounded-full p-2">
           
-            <Image width={40}
+            <Image width={40}   // required10
       height={40}  src="/images/Logo.png" alt="Logo" />
           </span>
           <span className="font-bold text-xl tracking-wide text-yellow-700 dark:text-yellow-400">
             {`Mansoori's`}
           </span>
         </Link>
-    
+        {/* Desktop Nav */}
         <div className="hidden md:flex gap-8  items-center">
           <Link href="#" className="nav-link">
             Home
@@ -36,6 +36,7 @@ export default function Navbar() {
             Contact
           </Link>
         </div>
+        {/* Mobile Hamburger */}
         <MobileMenu />
       </div>
     </nav>
