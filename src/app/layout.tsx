@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
+      <body cz-shortcut-listen="true" className={`${inter.variable} ${robotoMono.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
         {/* Footer */}

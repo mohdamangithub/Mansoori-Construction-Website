@@ -72,8 +72,8 @@ export default function Home() {
                 src="/images/Saheed.png"
                 alt="Owner Photo"
                 className=" object-cover object-top border-2 border-yellow-700 shadow"
-                width={112}    // same as w-28
-                height={112} 
+                width={112} // same as w-28
+                height={112}
               />
               <div className="leading-none text-start">
                 <li>Mohd Saheed Mansoori</li>
@@ -87,8 +87,8 @@ export default function Home() {
                 src="/images/Baheed.png"
                 alt="Owner Photo"
                 className="object-cover object-top border-2 border-yellow-700 shadow"
-                width={112}    // same as w-28
-                height={112} 
+                width={112} // same as w-28
+                height={112}
               />
               <div className="leading-none text-start">
                 <li>Mohd Baheed Mansoori</li>
@@ -102,8 +102,8 @@ export default function Home() {
                 src="/images/Jaheed.png"
                 alt="Owner Photo"
                 className="object-cover object-center border-2 border-yellow-700 shadow"
-                width={112}    // same as w-28
-                height={112} 
+                width={112} // same as w-28
+                height={112}
               />
               <div className="leading-none text-start">
                 <li>Mohd Jaheed Mansoori</li>
@@ -117,8 +117,8 @@ export default function Home() {
                 src="/images/Aziz.png"
                 alt="Owner Photo"
                 className="object-cover object-top border-2 border-yellow-700 shadow"
-                width={112}    // same as w-28
-                height={112} 
+                width={112} // same as w-28
+                height={112}
               />
               <div className="leading-none text-start">
                 <li>Mohd Aziz Mansoori</li>
@@ -242,10 +242,9 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
             <Image
-              
-              width={400}    // same as h-50
-                height={0} 
-                className="h-50 object-cover object-top"
+              width={400} // same as h-50
+              height={0}
+              className="h-50 object-cover object-top"
               src="/images/Talbehat.jpg"
               alt="Talbehat Site"
             />
@@ -264,8 +263,8 @@ export default function Home() {
           </div>
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
             <Image
-              width={400}    // same as h-50
-              height={0} 
+              width={400} // same as h-50
+              height={0}
               className="h-50 object-cover"
               src="/images/Budpura2.jpg"
               alt="Burhpura Site"
@@ -286,8 +285,8 @@ export default function Home() {
           </div>
           <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
             <Image
-              width={400}    // same as h-50
-              height={0} 
+              width={400} // same as h-50
+              height={0}
               className="h-50 object-cover"
               src="/images/Samthar.jpg"
               alt="Lalitpur Site"
