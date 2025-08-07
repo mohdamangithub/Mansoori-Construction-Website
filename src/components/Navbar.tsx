@@ -14,7 +14,7 @@ export default function Navbar() {
             <Image width={40}   // required10
       height={40}  src="/images/Logo.png" alt="Logo" />
           </span>
-          <span className="font-bold text-xl tracking-wide text-yellow-700 dark:text-yellow-400">
+          <span className="owner-name font-extrabold text-xl tracking-wide text-yellow-700 dark:text-yellow-400 uppercase">
             {`Mansoori's`}
           </span>
         </Link>
@@ -62,33 +62,33 @@ function MobileMenu() {
       </button>
       {open && (
         <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-lg border-t border-yellow-600 flex flex-col items-center gap-4 py-6 z-50 animate-fade-in">
-          <Link href="#" className="nav-link" onClick={() => setOpen(false)}>
+          <Link href="#" className="nav-link btn" onClick={() => setOpen(false)}>
             Home
           </Link>
           <Link
             href="#about"
-            className="nav-link"
+            className="nav-link btn"
             onClick={() => setOpen(false)}
           >
             About
           </Link>
           <Link
             href="#services"
-            className="nav-link"
+            className="nav-link btn"
             onClick={() => setOpen(false)}
           >
             Services
           </Link>
           <Link
             href="#projects"
-            className="nav-link"
+            className="nav-link btn"
             onClick={() => setOpen(false)}
           >
             Projects
           </Link>
           <Link
             href="#contact"
-            className="nav-link"
+            className="nav-link btn"
             onClick={() => setOpen(false)}
           >
             Contact

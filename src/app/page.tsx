@@ -8,20 +8,20 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative flex flex-col items-center justify-center text-center py-20 px-4 bg-gradient-to-br from-yellow-100 to-yellow-300 dark:from-yellow-700 dark:to-yellow-900">
         <motion.h1
-          className="head text-4xl sm:text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg"
+          className="head text-4xl sm:text-5xl md:text-5xl font-bold mb-4 drop-shadow-lg tracking-wide uppercase"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          Mansoori Construction Babina Pvt Ltd
+         M/S <span>&nbsp;</span>Mansoori <span>&nbsp;</span>Construction <span>&nbsp;</span>Babina
         </motion.h1>
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl mb-4 max-w-2xl mx-auto text-yellow-900 dark:text-yellow-200 font-semibold"
+          className="owner-name text-lg sm:text-xl md:text-2xl mb-4 max-w-2xl mx-auto text-yellow-900 dark:text-yellow-200 font-extrabold"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
         >
-          Public Works Department Government Contractor
+          Public Works Department Government Contractor<span className="pwd-span">&nbsp;</span> ( PWD )
         </motion.p>
         <motion.p
           className="text-base sm:text-lg mb-8 max-w-2xl mx-auto"
@@ -34,7 +34,7 @@ export default function Home() {
         </motion.p>
         <motion.a
           href="#contact"
-          className="inline-block bg-yellow-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-700 transition"
+          className="btn inline-block bg-yellow-600 text-white font-bold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-700 transition"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
@@ -56,16 +56,16 @@ export default function Home() {
         <Image
           src="/images/Founder.png"
           alt="Owner Photo"
-          className="rounded-full object-cover  border-2 border-yellow-700 shadow-amber-100 shadow-2xl dark:shadow-white mb-6"
+          className="rounded-full object-cover  border-2 border-yellow-700 shadow-[#8080809d] shadow-2xl dark:shadow-yellow-700 mb-6"
           width={240} //40
           height={240}
         />
-        <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-yellow-700 dark:text-yellow-400">
+        <h2 className="owner-name text-2xl sm:text-3xl font-extrabold mb-2 text-yellow-700 dark:text-yellow-400">
           Haji Sheikh Mohammad Ibrahim
         </h2>
-        <p className="text-lg mb-14">Chief Contractor & Founder</p>
+        <p className="btn text-lg mb-14 font-semibold">Chief Contractor & Founder</p>
         <div className="bg-yellow-50 dark:bg-yellow-900/40 p-4 rounded-lg shadow w-full max-w-maxs mx-auto">
-          <h3 className="font-semibold text-xl mb-8 mt-4">{`Founder's Sons`}</h3>
+          <h3 className="owner-name font-extrabold text-xl mb-8 mt-4">{`Founder's Sons`}</h3>
           <ul className="text-2xl text-yellow-700 dark:text-yellow-400 font-semibold space-y-1">
             <div className="sons flex items-center justify-center gap-12 mb-3">
               <Image
@@ -76,8 +76,8 @@ export default function Home() {
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mr. Saheed Mansoori</li>
-                <span className="text-[1rem] text-black font-normal dark:text-white">
+                <li className="owner-name">Mr. Saheed Mansoori</li>
+                <span className="btn text-[1rem] text-black font-semibold dark:text-white">
                   ( PWD Contractor )
                 </span>
               </div>
@@ -91,8 +91,8 @@ export default function Home() {
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mr. Baheed Mansoori</li>
-                <span className="text-[1rem] text-black font-normal dark:text-white">
+                <li className="owner-name">Mr. Baheed Mansoori</li>
+                <span className="btn text-[1rem] text-black font-semibold dark:text-white">
                   ( Mansoori Building Materials )
                 </span>
               </div>
@@ -106,8 +106,8 @@ export default function Home() {
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mr. Jaheed Mansoori</li>
-                <span className="text-[1rem] text-black font-normal dark:text-white">
+                <li className="owner-name">Mr. Jaheed Mansoori</li>
+                <span className="btn text-[1rem] text-black font-semibold dark:text-white">
                   ( Jaheed Stones )
                 </span>
               </div>
@@ -121,8 +121,8 @@ export default function Home() {
                 height={112}
               />
               <div className="leading-none text-start">
-                <li>Mr. Aziz Mansoori</li>
-                <span className="text-[1rem] text-black font-normal dark:text-white">
+                <li className="owner-name">Mr. Aziz Mansoori</li>
+                <span className="btn text-[1rem] text-black font-semibold dark:text-white">
                   ( lovely Garments )
                 </span>
               </div>
@@ -140,7 +140,7 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
       >
-        <h2 className="text-5xl font-bold mb-5 mt-9 text-yellow-700 dark:text-yellow-400">
+        <h2 className="nav-head owner-name text-5xl font-bold mb-5 mt-9 text-yellow-700 dark:text-yellow-400">
           About Us
         </h2>
         <p className="text-lg mb-4">
@@ -151,18 +151,18 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap gap-6 justify-center mt-6">
           <div className="bg-yellow-50 dark:bg-yellow-900/40 p-6 rounded-lg shadow w-64">
-            <h3 className="font-semibold text-xl mb-2">Government Certified</h3>
+            <h3 className="owner-name font-extrabold text-xl mb-2">Government Certified</h3>
             <p>Licensed for major public works and infrastructure projects.</p>
           </div>
           <div className="bg-yellow-50 dark:bg-yellow-900/40 p-6 rounded-lg shadow w-64">
-            <h3 className="font-semibold text-xl mb-2">Experienced Team</h3>
+            <h3 className="owner-name font-extrabold text-xl mb-2">Experienced Team</h3>
             <p>
               Engineers, supervisors, and skilled workers for every project
               scale.
             </p>
           </div>
           <div className="bg-yellow-50 dark:bg-yellow-900/40 p-6 rounded-lg shadow w-64">
-            <h3 className="font-semibold text-xl mb-2">On-Time Delivery</h3>
+            <h3 className="owner-name font-extrabold text-xl mb-2">On-Time Delivery</h3>
             <p>Proven record of timely completion and quality assurance.</p>
           </div>
         </div>
@@ -178,19 +178,19 @@ export default function Home() {
         transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
       >
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-5xl font-bold mb-10 mt-9  text-yellow-700 dark:text-yellow-400">
+          <h2 className="nav-head owner-name text-5xl font-bold mb-10 mt-9  text-yellow-700 dark:text-yellow-400">
             Our Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow flex flex-col items-center">
               <Image
-                src="/file.svg"
+                src="/images/Road.png"
                 alt="Road Construction"
-                width={48}
-                height={48}
+                width={60}
+                height={60}
                 className="mb-4"
               />
-              <h3 className="font-semibold text-xl mb-2">Road Construction</h3>
+              <h3 className="owner-name font-extrabold text-xl mb-2">Road Construction</h3>
               <p>
                 Highways, rural roads, and urban streets built to government
                 standards.
@@ -198,26 +198,26 @@ export default function Home() {
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow flex flex-col items-center">
               <Image
-                src="/window.svg"
+                src="/images/Building.png"
                 alt="Building Projects"
-                width={48}
-                height={48}
+                width={60}
+                height={60}
                 className="mb-4"
               />
-              <h3 className="font-semibold text-xl mb-2">Building Projects</h3>
+              <h3 className="owner-name font-extrabold text-xl mb-2">Building Projects</h3>
               <p>
                 Schools, hospitals, government offices, and public facilities.
               </p>
             </div>
             <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow flex flex-col items-center">
               <Image
-                src="/globe.svg"
+                src="/images/Dam.png"
                 alt="Dam & Water Works"
-                width={48}
-                height={48}
+                width={60}
+                height={60}
                 className="mb-4"
               />
-              <h3 className="font-semibold text-xl mb-2">Dam & Water Works</h3>
+              <h3 className="owner-name font-extrabold text-xl mb-2">Dam & Water Works</h3>
               <p>
                 Dams, canals, and water management infrastructure for the public
                 good.
@@ -227,6 +227,40 @@ export default function Home() {
         </div>
       </motion.section>
 
+      {/* Crusher Section */}
+      <motion.section
+        id="Crusher"
+        className="pt-12 pb-0 px-4 max-w-5xl mx-auto w-full text-center"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+      >
+        <h2 className=" nav-head owner-name text-5xl font-bold mb-10 mt-7 text-yellow-700 dark:text-yellow-400 uppercase">
+         Mansoori Stone Crusher Plant
+        </h2>
+        <div className="grid grid-cols-1  gap-8">
+          <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
+            <Image
+              width={400} // same as h-50
+              height={0}
+              className="w-full h-[100%] object-cover object-top"
+              src="/images/Crusher.jpg"
+              alt="Talbehat Site"
+            />
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="owner-name font-extrabold text-lg mb-6 uppercase ">
+                Koti Village Babina Rural, U.P
+              </h3>
+              <p className="crusher-para text-sm flex-1 px-24 mb-8">
+                A Stone Crushing Plant, is a facility that breaks down large rocks into smaller pieces, gravel, or rock dust. These plants are essential for various industries like construction, mining, and quarrying, providing aggregates for roads, buildings, and other applications. A typical plant includes several key components: feeders, crushers, screens, and conveyors, all working together in a coordinated process.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </motion.section>
+      
       {/* Projects Section */}
       <motion.section
         id="projects"
@@ -236,7 +270,7 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
       >
-        <h2 className="text-5xl font-bold mb-10 mt-7 text-yellow-700 dark:text-yellow-400">
+        <h2 className="nav-head owner-name text-5xl font-bold mb-10 mt-7 text-yellow-700 dark:text-yellow-400">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -249,7 +283,7 @@ export default function Home() {
               alt="Talbehat Site"
             />
             <div className="p-4 flex-1 flex flex-col">
-              <h3 className="font-extrabold text-lg mb-4 uppercase">
+              <h3 className="owner-name font-extrabold text-lg mb-4 uppercase">
                 Talbehat Police Residential, U.P
               </h3>
               <p className="text-sm flex-1">
@@ -270,7 +304,7 @@ export default function Home() {
               alt="Burhpura Site"
             />
             <div className="p-4 flex-1 flex flex-col">
-              <h3 className="font-extrabold text-lg mb-4 uppercase">
+              <h3 className="owner-name font-extrabold text-lg mb-4 uppercase">
                 Burhpura Higher Secondary School, U.P
               </h3>
               <p className="text-sm flex-1">
@@ -292,7 +326,7 @@ export default function Home() {
               alt="Lalitpur Site"
             />
             <div className="p-4 flex-1 flex flex-col">
-              <h3 className="font-extrabold text-lg mb-4 uppercase">
+              <h3 className="owner-name font-extrabold text-lg mb-4 uppercase">
                 Lalitpur Bitumen Road Construction, U.P
               </h3>
               <p className="text-sm flex-1">
@@ -318,7 +352,7 @@ export default function Home() {
         transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
       >
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-5xl font-bold mb-8 mt-7 text-yellow-700 dark:text-yellow-400">
+          <h2 className="nav-head owner-name text-5xl font-bold mb-8 mt-7 text-yellow-700 dark:text-yellow-400">
             Contact Us
           </h2>
           <form className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow flex flex-col gap-4">
@@ -342,7 +376,7 @@ export default function Home() {
             />
             <button
               type="submit"
-              className="bg-yellow-600 text-white font-semibold px-6 py-3 rounded hover:bg-yellow-700 transition"
+              className="btn bg-yellow-600 text-white font-bold px-6 py-3 rounded hover:bg-yellow-700 transition"
             >
               Send Message
             </button>
