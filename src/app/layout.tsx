@@ -22,7 +22,6 @@ export default function RootLayout({
       <body cz-shortcut-listen="true" className={`${inter.variable} ${robotoMono.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
-        {/* Footer */}
         <footer className="w-full bg-yellow-700 text-white py-6 mt-12">
           <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-2">
             <span className=" footer font-semibold leading-none ">
