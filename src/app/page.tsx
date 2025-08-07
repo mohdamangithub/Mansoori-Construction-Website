@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-
-
 export default function Home() {
   return (
     <div className="font-sans bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen flex flex-col">
@@ -15,7 +13,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-        Mansoori Construction Babina Pvt Ltd
+          Mansoori Construction Babina Pvt Ltd
         </motion.h1>
         <motion.p
           className="text-lg sm:text-xl md:text-2xl mb-4 max-w-2xl mx-auto text-yellow-900 dark:text-yellow-200 font-semibold"
@@ -58,7 +56,9 @@ export default function Home() {
         <Image
           src="/images/Founder.png"
           alt="Owner Photo"
-          className="w-60 h-60 rounded-full object-cover border-2 border-yellow-700  shadow mb-6"
+          className="rounded-full object-cover border-2 border-yellow-700  shadow mb-6"
+          width={240} //40
+          height={240}
         />
         <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-yellow-700 dark:text-yellow-400">
           Haji Sheikh Mohammad Ibrahim
@@ -68,49 +68,64 @@ export default function Home() {
           <h3 className="font-semibold text-xl mb-8 mt-4">Founder Son's</h3>
           <ul className="text-2xl text-yellow-700 dark:text-yellow-400 font-semibold space-y-1">
             <div className="sons flex items-center justify-center gap-12 mb-3">
-          <Image
-          src="/images/Saheed.png"
-          alt="Owner Photo"
-          className="w-28 h-28 rounded-full object-cover object-top border-2 border-yellow-700 shadow"
-        />
-        <div className="leading-none text-start">
-                    <li>Mohd Saheed Mansoori</li>
-                    <span className="text-[1rem] text-black font-normal dark:text-white">( PWD Contractor )</span>
-                    </div>
+              <Image
+                src="/images/Saheed.png"
+                alt="Owner Photo"
+                className=" object-cover object-top border-2 border-yellow-700 shadow"
+                width={112}    // same as w-28
+                height={112} 
+              />
+              <div className="leading-none text-start">
+                <li>Mohd Saheed Mansoori</li>
+                <span className="text-[1rem] text-black font-normal dark:text-white">
+                  ( PWD Contractor )
+                </span>
+              </div>
             </div>
             <div className="sons flex items-center justify-center gap-12 mb-3">
-          <Image
-          src="/images/Baheed.png"
-          alt="Owner Photo"
-          className="w-28 h-28 rounded-full object-cover object-top border-2 border-yellow-700 shadow"
-        />
-        <div className="leading-none text-start">
-            <li>Mohd Baheed Mansoori</li>
-            <span className="text-[1rem] text-black font-normal dark:text-white">( Mansoori Building Materials )</span>
-            </div>
+              <Image
+                src="/images/Baheed.png"
+                alt="Owner Photo"
+                className="object-cover object-top border-2 border-yellow-700 shadow"
+                width={112}    // same as w-28
+                height={112} 
+              />
+              <div className="leading-none text-start">
+                <li>Mohd Baheed Mansoori</li>
+                <span className="text-[1rem] text-black font-normal dark:text-white">
+                  ( Mansoori Building Materials )
+                </span>
+              </div>
             </div>
             <div className="sons flex items-center justify-center gap-12 mb-3">
-          <Image
-          src="/images/Jaheed.png"
-          alt="Owner Photo"
-          className="w-28 h-28 rounded-full object-cover object-center border-2 border-yellow-700 shadow"
-        />
-        <div className="leading-none text-start">
-            <li>Mohd Jaheed Mansoori</li>
-            <span className="text-[1rem] text-black font-normal dark:text-white">( Jaheed Stones )</span>
-        </div>
+              <Image
+                src="/images/Jaheed.png"
+                alt="Owner Photo"
+                className="object-cover object-center border-2 border-yellow-700 shadow"
+                width={112}    // same as w-28
+                height={112} 
+              />
+              <div className="leading-none text-start">
+                <li>Mohd Jaheed Mansoori</li>
+                <span className="text-[1rem] text-black font-normal dark:text-white">
+                  ( Jaheed Stones )
+                </span>
+              </div>
             </div>
             <div className="sons flex items-center justify-center gap-12 mb-3 mr-10">
-          <Image
-          src="/images/Aziz.png"
-          alt="Owner Photo"
-          className="w-28 h-28 rounded-full object-cover object-top border-2 border-yellow-700 shadow"
-        />
-        <div className="leading-none text-start">
-            <li>Mohd Aziz Mansoori</li>
-            <span className="text-[1rem] text-black font-normal dark:text-white">( lovely Garments )</span>
-
-            </div>
+              <Image
+                src="/images/Aziz.png"
+                alt="Owner Photo"
+                className="object-cover object-top border-2 border-yellow-700 shadow"
+                width={112}    // same as w-28
+                height={112} 
+              />
+              <div className="leading-none text-start">
+                <li>Mohd Aziz Mansoori</li>
+                <span className="text-[1rem] text-black font-normal dark:text-white">
+                  ( lovely Garments )
+                </span>
+              </div>
             </div>
           </ul>
         </div>
@@ -225,46 +240,72 @@ export default function Home() {
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            <div
-              className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col"
-            >
-              <Image className="h-50 object-cover object-top" src="/images/Talbehat.jpg" alt="" />
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-extrabold text-lg mb-4 uppercase">
-                  Talbehat Police Residential, U.P
-                </h3>
-                <p className="text-sm flex-1">
-                This Complex are constructed to provide housing for police personnel, often prioritizing lower and higher subordinates, and are considered a key aspect of police force modernization. These complexes typically include well-secured residential buildings with basic amenities to improve living and working conditions.
-                </p>
-              </div>
+          <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
+            <Image
+              
+              width={400}    // same as h-50
+                height={0} 
+                className="h-50 object-cover object-top"
+              src="/images/Talbehat.jpg"
+              alt="Talbehat Site"
+            />
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-extrabold text-lg mb-4 uppercase">
+                Talbehat Police Residential, U.P
+              </h3>
+              <p className="text-sm flex-1">
+                This Complex are constructed to provide housing for police
+                personnel, often prioritizing lower and higher subordinates, and
+                are considered a key aspect of police force modernization. These
+                complexes typically include well-secured residential buildings
+                with basic amenities to improve living and working conditions.
+              </p>
             </div>
-            <div
-              className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col"
-            >
-              <Image className="h-50 object-cover" src="/images/Budpura2.jpg" alt="" />
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-extrabold text-lg mb-4 uppercase">
-                  Burhpura Higher Secondary School, U.P
-                </h3>
-                <p className="text-sm flex-1">
-                Government School construction projects aim to provide safe and conducive learning environments by building or renovating school infrastructure. These projects involve various components like classrooms, laboratories, libraries, administrative offices, and sanitation facilities, often adhering to specific standards and guidelines.
-                </p>
-              </div>
+          </div>
+          <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
+            <Image
+              width={400}    // same as h-50
+              height={0} 
+              className="h-50 object-cover"
+              src="/images/Budpura2.jpg"
+              alt="Burhpura Site"
+            />
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-extrabold text-lg mb-4 uppercase">
+                Burhpura Higher Secondary School, U.P
+              </h3>
+              <p className="text-sm flex-1">
+                Government School construction projects aim to provide safe and
+                conducive learning environments by building or renovating school
+                infrastructure. These projects involve various components like
+                classrooms, laboratories, libraries, administrative offices, and
+                sanitation facilities, often adhering to specific standards and
+                guidelines.
+              </p>
             </div>
-            <div
-              className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col"
-            >
-              <Image className="h-50 object-cover" src="/images/Samthar.jpg" alt="" />
-              <div className="p-4 flex-1 flex flex-col">
-                <h3 className="font-extrabold text-lg mb-4 uppercase">
-                  Lalitpur Bitumen Road Construction, U.P
-                </h3>
-                <p className="text-sm flex-1">
-                Bitumen Road Construction involves creating a paved surface using a mixture of bitumen and aggregates like gravel or crushed rock. This process creates a durable, waterproof, and flexible road surface, ideal for withstanding heavy traffic, The surface texture of a bitumen road provides good skid resistance for vehicles. 
-                </p>
-              </div>
+          </div>
+          <div className="bg-white dark:bg-gray-900 rounded-lg shadow overflow-hidden flex flex-col">
+            <Image
+              width={400}    // same as h-50
+              height={0} 
+              className="h-50 object-cover"
+              src="/images/Samthar.jpg"
+              alt="Lalitpur Site"
+            />
+            <div className="p-4 flex-1 flex flex-col">
+              <h3 className="font-extrabold text-lg mb-4 uppercase">
+                Lalitpur Bitumen Road Construction, U.P
+              </h3>
+              <p className="text-sm flex-1">
+                Bitumen Road Construction involves creating a paved surface
+                using a mixture of bitumen and aggregates like gravel or crushed
+                rock. This process creates a durable, waterproof, and flexible
+                road surface, ideal for withstanding heavy traffic, The surface
+                texture of a bitumen road provides good skid resistance for
+                vehicles.
+              </p>
             </div>
-        
+          </div>
         </div>
       </motion.section>
 

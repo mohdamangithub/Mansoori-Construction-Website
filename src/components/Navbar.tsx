@@ -11,7 +11,8 @@ export default function Navbar() {
         <Link href="#" className="flex items-center gap-4">
           <span className="inline-block bg-yellow-600 rounded-full p-2">
           
-            <Image className="h-10" src="/images/Logo.png" alt="Logo" />
+            <Image width={40}   // required10
+      height={40}  src="/images/Logo.png" alt="Logo" />
           </span>
           <span className="font-bold text-xl tracking-wide text-yellow-700 dark:text-yellow-400">
             Mansoori's
