@@ -15,7 +15,7 @@ export default function Navbar() {
       height={40}  src="/images/Logo.png" alt="Logo" />
           </span>
           <span className="font-bold text-xl tracking-wide text-yellow-700 dark:text-yellow-400">
-            Mansoori's
+            {`Mansoori's`}
           </span>
         </Link>
     
