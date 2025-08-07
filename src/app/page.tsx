@@ -62,7 +62,7 @@ export default function Home() {
         </h2>
         <p className="text-lg mb-14">Chief Contractor & Founder</p>
         <div className="bg-yellow-50 dark:bg-yellow-900/40 p-4 rounded-lg shadow w-full max-w-maxs mx-auto">
-          <h3 className="font-semibold text-xl mb-8 mt-4">Founder Son's</h3>
+          <h3 className="font-semibold text-xl mb-8 mt-4">{`Founder Son's`}</h3>
           <ul className="text-2xl text-yellow-700 dark:text-yellow-400 font-semibold space-y-1">
             <div className="sons flex items-center justify-center gap-12 mb-3">
               <Image
