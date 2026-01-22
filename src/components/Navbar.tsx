@@ -61,7 +61,7 @@ function MobileMenu() {
         </svg>
       </button>
       {open && (
-        <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-lg border-t border-yellow-600 flex flex-col items-center gap-4 py-6 z-50 animate-fade-in">
+        <div className="absolute top-20 left-0 w-full bg-white dark:bg-gray-900 shadow-lg border-t border-yellow-600 flex flex-col items-center gap-4 py-6 z-50 animate-fade-in">
           <Link href="#" className="nav-link btn" onClick={() => setOpen(false)}>
             Home
           </Link>
